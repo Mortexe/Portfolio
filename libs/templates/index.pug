@@ -1,0 +1,89 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, user-scalable=no')
+    link(rel='stylesheet', href='/assets/css/style.css')
+    link(rel='stylesheet', href='/assets/css/prowl.css')
+    link(rel='stylesheet', href='/assets/css/prowl_theme.css')
+    link(href='https://fonts.googleapis.com/css?family=Montserrat:200,300,400,700,900', rel='stylesheet')
+    title Paris Chrysanthou | Web Developer
+  body
+    header
+      .top-wrapper
+        .top-text
+          h1 Hey, I'm Paris. I design & build
+          h1
+            span.txt-rotate(data-period='2000', data-rotate='[ "websites.", "web applications.", "user interfaces.", "desktop applications." ]')  
+            span#blink |
+        #button-top(data-prowl-target='modal')
+          h3 YEP, YOU CAN HIRE ME
+      .pointer
+        a Read more about me
+        br
+        svg#Capa_1(xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', version='1.1', x='0px', y='0px', width='512px', height='512px', viewbox='0 0 451.847 451.847', style='enable-background:new 0 0 451.847 451.847;', xml:space='preserve')
+          path(d='M225.923,354.706c-8.098,0-16.195-3.092-22.369-9.263L9.27,151.157c-12.359-12.359-12.359-32.397,0-44.751   c12.354-12.354,32.388-12.354,44.748,0l171.905,171.915l171.906-171.909c12.359-12.354,32.391-12.354,44.744,0   c12.365,12.354,12.365,32.392,0,44.751L248.292,345.449C242.115,351.621,234.018,354.706,225.923,354.706z')
+    .container
+      .services
+        .row
+          h1 What I provide
+          p Building & Creating based on industry standard procedures
+        .row_one
+          .column.one
+            i.fa.fa-eercast.fa-4x(aria-hidden='true')
+            h2 Research
+            p
+              | Reassuring what the product/project is about. Learning
+              | about it's actual purpose before moving forward on
+              | building the product.
+          .column.two
+            i.fa.fa-magic.fa-4x(aria-hidden='true')
+            h2 UX / UI
+            p
+              | Getting a basic idea of what the client
+              | desires in terms of design. I am always making sure
+              | the content structure is correct and UI pattents
+              | are intuitive.
+        .row_two
+          .column.three
+            i.fa.fa-code.fa-4x(aria-hidden='true')
+            h2 Code
+            p
+              | Design idea is determined? Great! Moving towards the coding part
+              | I use HTML5, CSS3, JavaScript and various frameworks. Writing code from scratch is my passion.
+          .column.four
+            i.fa.fa-handshake-o.fa-4x(aria-hidden='true')
+            h2 Delivery
+            p
+              | Once all the testing and evaluation is done and client agrees with the overall
+              | product, it is finally determined as completed and it is ready to be delivered
+              | to the client.
+      .work-sect
+        .work-container
+          h1 Personal Projects
+          p All projects are made just by me.
+          .first-work
+            .work-left
+              img(src='/assets/images/devices.png')
+            .first-detail
+              h1 Gradeculator
+              ul
+                li  Built with HTML5, CSS and JavaScript.
+              p
+                | Gradeculator is a web application based on university
+                | grade assessment. With its simple UI any student can calculate
+                | his module average in a click of a button. No more hassle trying
+                | to do the math.
+              #visit-btn(onclick="window.open('http://gradeculator.com', '_blank');")
+                h3 VISIT WEBSITE
+      a.open(data-prowl-target='example') Open the modal
+      .prowl
+        .prowl-overlay
+          .prowl-modal(data-prowl-id='example')
+            h2 It's a modal!
+            .button.toggle Close
+    script(src='https://use.fontawesome.com/6f28e66262.js')
+    script(src='https://code.jquery.com/jquery-3.1.1.min.js')
+    script(src='https://cdn.darken.io/prowljs/latest/prowl.min.js')
+    script(type='text/javascript', src='/assets/js/rotate.js')
+    script(type='text/javascript', src='/assets/js/clicks.js')

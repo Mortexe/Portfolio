@@ -1,0 +1,65 @@
+body.locked {
+  overflow: hidden;
+  touch-action: none;
+}
+.prowl {
+  display: none;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 0%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+}
+.prowl::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.prowl-overlay {
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+  background-color: rgba(12,13,13,0.57);
+}
+.prowl-modal {
+  display: none;
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+}
+.prowl-modal.scale {
+  height: 0;
+  width: 0;
+  display: block;
+}
+@media only screen and (max-width: 1050px) {
+  .prowl-modal {
+    width: 75%;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .prowl-modal {
+    position: fixed;
+    -webkit-transform: translate(0);
+    -moz-transform: translate(0);
+    -o-transform: translate(0);
+    -ms-transform: translate(0);
+    transform: translate(0);
+    width: 100%;
+    height: 100%;
+    border-radius: 0 !important;
+  }
+}
