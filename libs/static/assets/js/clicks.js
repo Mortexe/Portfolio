@@ -10,4 +10,4 @@ $("body").on('click', '.pointer svg', function() {
     }, 1000);
 });
 
-$('.open').prowl("prowl-toggle");
+$('#button-top h3').prowl();

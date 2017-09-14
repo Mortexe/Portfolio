@@ -16,8 +16,13 @@ html
           h1
             span.txt-rotate(data-period='2000', data-rotate='[ "websites.", "web applications.", "user interfaces.", "desktop applications." ]')  
             span#blink |
-        #button-top(data-prowl-target='modal')
+        #button-top(data-prowl-target='example')
           h3 YEP, YOU CAN HIRE ME
+          .prowl
+            .prowl-overlay
+             .prowl-modal(data-prowl-id='example')
+               h2 It's a modal!
+               .button.toggle Close
       .pointer
         a Read more about me
         br
@@ -75,13 +80,20 @@ html
                 | his module average in a click of a button. No more hassle trying
                 | to do the math.
               #visit-btn(onclick="window.open('http://gradeculator.com', '_blank');")
-                h3 VISIT WEBSITE
-      a.open(data-prowl-target='example') Open the modal
-      .prowl
-        .prowl-overlay
-          .prowl-modal(data-prowl-id='example')
-            h2 It's a modal!
-            .button.toggle Close
+                h3 VISIT WEBSITE   
+          .second-work
+            .work-left
+              img(src='/assets/images/devices-drum.png')
+            .second-detail
+              h1 Virtual Drums
+              ul
+                li  Built with HTML5, CSS and JavaScript.
+              p
+                | Virtual drums was a short but fun project to combine
+                | coding and music. This project was not taken as seriously
+                | but it is fully functional and fun to use.
+              #visit-btn(onclick="window.open('http://javascript-drums.surge.sh', '_blank');")
+                h3 VISIT WEBSITE               
     script(src='https://use.fontawesome.com/6f28e66262.js')
     script(src='https://code.jquery.com/jquery-3.1.1.min.js')
     script(src='https://cdn.darken.io/prowljs/latest/prowl.min.js')

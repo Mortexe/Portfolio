@@ -123,6 +123,7 @@ a{
 
 .container{
   text-align: center;
+  width: 102%;
 }
 
 i{
@@ -163,11 +164,6 @@ color: rgb(251,203,75);
   text-align: center;
 }
 
-#bullet{
-  color: rgb(251,203,75) !important;
-  font-size: 4em;
-}
-
 .work-sect p{
   color: #524e4d;
 }
@@ -177,7 +173,6 @@ color: rgb(251,203,75);
   margin-top: 100px;
   text-align: center;
   border-bottom: 1.5px solid rgb(178,198,204);
-;
 }
 
 .first-work .first-detail{
@@ -217,6 +212,12 @@ ul li::before{
   max-width: 600px;
 }
 
+#visit-btn{
+width: 153px;
+height: 60px;
+margin-bottom: 2em;
+ }
+
 #visit-btn h3{
   transition: all ease .5s;
   font-size: 15px;
@@ -233,4 +234,48 @@ ul li::before{
   border: 3px solid rgb(43,59,63);
   color: rgb(251,203,75);
   cursor: pointer;
+}
+
+.second-work{
+  display: inline-block;
+  margin-top: 100px;
+  text-align: center;
+  border-bottom: 1.5px solid rgb(178,198,204);
+}
+
+.second-work .second-detail{
+text-align: left;
+float: left;
+width: 46%;
+max-width: 960px;
+}
+
+.second-work .second-detail h1{
+  margin:0;
+}
+
+ul{
+  padding-left: 0;
+  margin-top: 0;
+  font-weight: 600 !important;
+  font-size: 0.8em;
+  letter-spacing: 1px;
+}
+
+ul li{
+  list-style: none;
+  color: rgb(178,198,204);
+  margin: 0;
+}
+
+ul li::before{
+  color: rgb(251,203,75);
+  content: '\2022';
+  font-size: 1.8em;
+}
+
+.second-work img{
+  float: right;
+  width: 40%;
+  max-width: 600px;
 }
