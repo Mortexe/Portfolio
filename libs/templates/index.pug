@@ -6,9 +6,11 @@ html
     link(rel='stylesheet', href='/assets/css/style.css')
     link(rel='stylesheet', href='/assets/css/prowl.css')
     link(rel='stylesheet', href='/assets/css/prowl_theme.css')
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css")
     link(href='https://fonts.googleapis.com/css?family=Montserrat:200,300,400,700,900', rel='stylesheet')
     title Paris Chrysanthou | Web Developer
   body
+    
     header
       .top-wrapper
         .top-text
@@ -68,9 +70,9 @@ html
           h1 Personal Projects
           p All projects are made just by me.
           .first-work
-            .work-left
+            .work-left.wow.fadeInLeft
               img(src='/assets/images/devices.png')
-            .first-detail
+            .first-detail.wow.fadeInRight
               h1 Gradeculator
               ul
                 li  Built with HTML5, CSS and JavaScript.
@@ -82,15 +84,16 @@ html
               #visit-btn(onclick="window.open('http://gradeculator.com', '_blank');")
                 h3 VISIT WEBSITE   
           .second-work
-            .work-left
+            .work-left.wow.fadeInRight
               img(src='/assets/images/devices-drum.png')
-            .second-detail
+            .second-detail.wow.fadeInLeft
               h1 Virtual Drums
               ul
                 li  Built with HTML5, CSS and JavaScript.
               p
                 | Virtual drums was a short but fun project to combine
-                | coding and music. This project was not taken as seriously
+                | coding and music. By simply using your keyboard you get authentic 
+                | drum sounds. This project was not taken as seriously
                 | but it is fully functional and fun to use.
               #visit-btn(onclick="window.open('http://javascript-drums.surge.sh', '_blank');")
                 h3 VISIT WEBSITE               
@@ -99,3 +102,11 @@ html
     script(src='https://cdn.darken.io/prowljs/latest/prowl.min.js')
     script(type='text/javascript', src='/assets/js/rotate.js')
     script(type='text/javascript', src='/assets/js/clicks.js')
+    script(type='text/javascript', src='/assets/js/wow.min.js')
+    script.
+     new WOW().init();
+    
+                
+
+
+      
