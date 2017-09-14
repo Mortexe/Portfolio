@@ -101,7 +101,7 @@ header h3{
     transform: translateY(8px);
   }
   100%{
-      transform: translateY(0px);
+    transform: translateY(0px);
   }
 }
 
@@ -168,21 +168,21 @@ color: rgb(251,203,75);
   color: #524e4d;
 }
 
-.first-work{
+.left-work{
   display: inline-block;
   margin-top: 100px;
   text-align: center;
   border-bottom: 1.5px solid rgb(178,198,204);
 }
 
-.first-work .first-detail{
+.left-work .left-detail{
 text-align: left;
 float: right;
 width: 46%;
 max-width: 960px;
 }
 
-.first-work .first-detail h1{
+.left-work .left-detail h1{
   margin:0;
 }
 
@@ -206,7 +206,7 @@ ul li::before{
   font-size: 1.8em;
 }
 
-.first-work img{
+.left-work img{
   float: left;
   width: 40%;
   max-width: 600px;
@@ -236,25 +236,25 @@ margin-bottom: 2em;
   cursor: pointer;
 }
 
-.second-work{
+.right-work{
   display: inline-block;
   margin-top: 100px;
   text-align: center;
   border-bottom: 1.5px solid rgb(178,198,204);
 }
 
-.second-work .second-detail{
+.right-work .right-detail{
 text-align: left;
 float: left;
 width: 46%;
 max-width: 960px;
 }
 
-.second-work .second-detail h1{
+.right-work .right-detail h1{
   margin:0;
 }
 
-.second-work img{
+.right-work img{
   float: right;
   width: 40%;
   max-width: 600px;
