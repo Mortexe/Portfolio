@@ -17,13 +17,10 @@ html
           h1
             span.txt-rotate(data-period='2000', data-rotate='[ "websites.", "web applications.", "user interfaces.", "desktop applications." ]')  
             span#blink |
-        #button-top(data-prowl-target='example')
+        #button-top
           h3 YEP, YOU CAN HIRE ME
-          .prowl
-            .prowl-overlay
-             .prowl-modal(data-prowl-id='example')
-               h2 It's a modal!
-               .button.toggle Close
+      
+               
       .pointer
         a Read more about me
         br
@@ -109,10 +106,29 @@ html
                 | drum sounds. This project was not taken as seriously
                 | but it is fully functional and fun to use.
               #visit-btn(onclick="window.open('http://javascript-drums.surge.sh', '_blank');")
-                h3 VISIT WEBSITE                              
+                h3 VISIT WEBSITE
+      .about-sect
+        .about-wrapper
+          .about-img
+            img(src="assets/images/MyAvatar.svg")
+          .about-header
+            h3 A little bit about myself..
+      .modal-sect
+      section.cd-section
+        .cd-modal-action
+          a(href="#0" class="btn" data-type="modal-trigger") Let's get started
+          span.cd-modal-bg
+        .cd-modal
+          .cd-modal-content
+            p
+              | This is a test text
+        a.cd-modal-close(href="#0") Close                                
     script(src='https://use.fontawesome.com/6f28e66262.js')
     script(src='https://code.jquery.com/jquery-3.1.1.min.js')
     script(src='https://cdn.darken.io/prowljs/latest/prowl.min.js')
+    script(type='text/javascript', src='/assets/js/velocity.min.js')
+    script(type='text/javascript', src='/assets/js/modernizr.js')
+    script(type='text/javascript', src='/assets/js/main.js')
     script(type='text/javascript', src='/assets/js/rotate.js')
     script(type='text/javascript', src='/assets/js/clicks.js')
     script(type='text/javascript', src='/assets/js/wow.min.js')
