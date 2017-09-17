@@ -19,8 +19,6 @@ html
             span#blink |
         #button-top
           h3 YEP, YOU CAN HIRE ME
-      
-               
       .pointer
         a Read more about me
         br
@@ -62,6 +60,7 @@ html
               | Once all the testing and evaluation is done and client agrees with the overall
               | product, it is finally determined as completed and it is ready to be delivered
               | to the client.
+      #border
       .work-sect
         .work-container
           h1 Personal Projects
@@ -80,6 +79,7 @@ html
                 | to do the math.
               #visit-btn(onclick="window.open('http://gradeculator.com', '_blank');")
                 h3 VISIT WEBSITE   
+          #border-work
           .right-work
             .work-left.wow.fadeInRight
               img(src='/assets/images/devices-drum.png')
@@ -94,7 +94,8 @@ html
                 | but it is fully functional and fun to use.
               #visit-btn(onclick="window.open('http://javascript-drums.surge.sh', '_blank');")
                 h3 VISIT WEBSITE
-          .left-work.last
+          #border-work
+          .left-work
             .work-left.wow.fadeInLeft
               img(src='/assets/images/devices-drum.png')
             .left-detail.wow.fadeInRight
@@ -108,6 +109,7 @@ html
                 | but it is fully functional and fun to use.
               #visit-btn(onclick="window.open('http://javascript-drums.surge.sh', '_blank');")
                 h3 VISIT WEBSITE
+      #border-work
       .about-sect
         .about-wrapper
           h1 About
@@ -118,7 +120,15 @@ html
               h3 Paris Chrysanthou
               p.title Full-Stack Developer
               .about-para
-                p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                p 
+                  | I'm a 21 years old developer based in Cyprus. Currently 
+                  | I'm studying Computer Science at the University of Essex.
+                  | Coding has been my passion since 2016. I've worked on
+                  | various projects including university projects, personal and open-source.
+                  | Creating web applications and websites with clean code and elegant UI is what I aim for.
+                p
+                  | I appreciate being a team player, since it ehances the development of great products, plus improving ideas & friendships. Though I can work as well as individually, being my own friend. Fully open and willing to adopt new ideas and new ways of working and doing things.
+
           .about-right
             .tools
               h1 Tools
@@ -130,15 +140,19 @@ html
                 a JavaScript
                 a JS Libraries
                 a Node.js
+                a MongoDB
+                a Express
                 a LESS
                 a Sass
                 a GitHub
                 a Codepen.io
-                a MongoDB
-                a Express
-      
-      
-      .bottom
+                a Adobe Illustrator CC
+      .email-sect
+        .email-wrap
+          h1 Want to build your website?
+          p 
+            | Click the button below, and send me an email with your details and
+            | project idea or what you are interested in. Don't be shy.
         .modal-sect
         section.cd-section
           .cd-modal-action
@@ -146,9 +160,14 @@ html
             span.cd-modal-bg
           .cd-modal
             .cd-modal-content
-              p
-                | This is a test text
-          a.cd-modal-close(href="#0") Close                                
+              form(action='https://formspree.io/paris.chrysanthou@gmail.com', method='POST')
+                input(type='text', name='Name')
+                input(type='text', name='Comment')
+                input(type='email', name='Reply to')
+                input(type='submit', value='Send')
+          a.cd-modal-close(href="#0") Close
+      .bottom
+                                        
     script(src='https://use.fontawesome.com/6f28e66262.js')
     script(src='https://code.jquery.com/jquery-3.1.1.min.js')
     script(src='https://cdn.darken.io/prowljs/latest/prowl.min.js')
@@ -160,8 +179,3 @@ html
     script(type='text/javascript', src='/assets/js/wow.min.js')
     script.
      new WOW().init();
-    
-                
-
-
-      

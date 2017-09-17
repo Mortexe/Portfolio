@@ -71,6 +71,7 @@
           </div>
         </div>
       </div>
+      <div id="border"></div>
       <div class="work-sect">
         <div class="work-container">
           <h1>Personal Projects</h1>
@@ -93,6 +94,7 @@
               </div>
             </div>
           </div>
+          <div id="border-work"></div>
           <div class="right-work">
             <div class="work-left wow fadeInRight"><img src="/assets/images/devices-drum.png"></div>
             <div class="right-detail wow fadeInLeft">
@@ -111,7 +113,8 @@
               </div>
             </div>
           </div>
-          <div class="left-work last">
+          <div id="border-work"></div>
+          <div class="left-work">
             <div class="work-left wow fadeInLeft"><img src="/assets/images/devices-drum.png"></div>
             <div class="left-detail wow fadeInRight">
               <h1>Virtual Drums</h1>
@@ -131,6 +134,7 @@
           </div>
         </div>
       </div>
+      <div id="border-work"></div>
       <div class="about-sect">
         <div class="about-wrapper">
           <h1>About</h1>
@@ -140,7 +144,14 @@
               <h3>Paris Chrysanthou</h3>
               <p class="title">Full-Stack Developer</p>
               <div class="about-para">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>
+                   I'm a 21 years old developer based in Cyprus. Currently 
+                  I'm studying Computer Science at the University of Essex.
+                  Coding has been my passion since 2016. I've worked on
+                  various projects including university projects, personal and open-source.
+                  Creating web applications and websites with clean code and elegant UI is what I aim for.
+                </p>
+                <p>I appreciate being a team player, since it ehances the development of great products, plus improving ideas & friendships. Though I can work as well as individually, being my own friend. Fully open and willing to adopt new ideas and new ways of working and doing things.</p>
               </div>
             </div>
           </div>
@@ -148,22 +159,35 @@
             <div class="tools">
               <h1>Tools</h1>
               <p>Here's a list of the tools I use daily</p>
-              <div class="tools-items"><a>HTLM5</a><a>CSS3</a><a>JavaScript</a><a>JS Libraries</a><a>Node.js</a><a>LESS</a><a>Sass</a><a>GitHub</a><a>Codepen.io</a><a>MongoDB</a><a>Express</a></div>
+              <div class="tools-items"><a>HTLM5</a><a>CSS3</a><a>JavaScript</a><a>JS Libraries</a><a>Node.js</a><a>MongoDB</a><a>Express</a><a>LESS</a><a>Sass</a><a>GitHub</a><a>Codepen.io</a><a>Adobe Illustrator CC</a></div>
             </div>
           </div>
         </div>
       </div>
-      <div class="bottom">
+      <div class="email-sect">
+        <div class="email-wrap">
+          <h1>Want to build your website?</h1>
+          <p>
+             Click the button below, and send me an email with your details and
+            project idea or what you are interested in. Don't be shy.
+          </p>
+        </div>
         <div class="modal-sect"></div>
         <section class="cd-section">
           <div class="cd-modal-action"><a class="btn" href="#0" data-type="modal-trigger">Let's get started</a><span class="cd-modal-bg"></span></div>
           <div class="cd-modal">
             <div class="cd-modal-content">
-              <p>This is a test text</p>
+              <form action="https://formspree.io/paris.chrysanthou@gmail.com" method="POST">
+                <input type="text" name="Name">
+                <input type="text" name="Comment">
+                <input type="email" name="Reply to">
+                <input type="submit" value="Send">
+              </form>
             </div>
-          </div><a class="cd-modal-close" href="#0">Close                                </a>
+          </div><a class="cd-modal-close" href="#0">Close</a>
         </section>
       </div>
+      <div class="bottom"></div>
     </div>
     <script src="https://use.fontawesome.com/6f28e66262.js"></script>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
@@ -174,13 +198,6 @@
     <script type="text/javascript" src="/assets/js/rotate.js"></script>
     <script type="text/javascript" src="/assets/js/clicks.js"></script>
     <script type="text/javascript" src="/assets/js/wow.min.js"></script>
-    <script>
-      new WOW().init();
-      
-                 
-      
-      
-       
-    </script>
+    <script>new WOW().init();</script>
   </body>
 </html>
