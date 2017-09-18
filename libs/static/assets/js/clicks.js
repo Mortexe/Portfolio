@@ -15,3 +15,11 @@ $('body').on('click', '#button-top h3', function() {
         scrollTop: $('.email-sect').offset().top
     }, 1500);
 });
+
+$('body').on('click','.btn', function(){
+    $('body').css('overflow-y', 'hidden');
+    $('body').css('overflow-x', 'hidden');
+}).on('click','.cd-modal-close', function(){
+    $('body').css('overflow-x', 'visible');
+    $('body').css('overflow-y', 'visible');
+})

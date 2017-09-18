@@ -15,7 +15,7 @@ const imagesDist = dist.cwd('assets/images')
 
 gulp.task('images-production', (next) => {
 	pump([
-		gulp.src([imagesDir.path('*.png'), imagesDir.path('*.jpg'), imagesDir.path('*.jpeg'), imagesDir.path('*.gif')]),
+		gulp.src([imagesDir.path('*.png'), imagesDir.path('*.jpg'), imagesDir.path('*.jpeg'), imagesDir.path('*.gif'), imagesDir.path('*.svg')]),
 		imagemin({
 			verbose: true
 		}),

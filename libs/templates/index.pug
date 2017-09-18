@@ -114,11 +114,11 @@ html
         .about-wrapper
           h1 About
           .about-left
-            .about-img
+            .about-img              
               img(src="assets/images/MyAvatar.svg")
-            .about-title
               h3 Paris Chrysanthou
               p.title Full-Stack Developer
+            .about-title
               .about-para
                 p 
                   | I'm a 21 years old developer based in Cyprus. Currently 
@@ -145,8 +145,12 @@ html
                 a LESS
                 a Sass
                 a GitHub
-                a Codepen.io
                 a Adobe Illustrator CC
+                a Atom.io
+                a Codepen.io
+              .dev-icons
+                img(src="/assets/images/webskills.svg") 
+                
       .email-sect
         .email-wrap
           h1 Want to build your website?
@@ -156,15 +160,27 @@ html
         .modal-sect
         section.cd-section
           .cd-modal-action
-            a(href="#0" class="btn" data-type="modal-trigger") Let's get started
+            a(href="#0" class="btn" data-type="modal-trigger") GET STARTED
             span.cd-modal-bg
           .cd-modal
             .cd-modal-content
               form(action='https://formspree.io/paris.chrysanthou@gmail.com', method='POST')
-                input(type='text', name='Name')
-                input(type='text', name='Comment')
-                input(type='email', name='Reply to')
-                input(type='submit', value='Send')
+                .form-header
+                  h1 Just a few questions before we begin.
+                  p
+                    | Fill out the form with your personal information and write a few
+                    | words of what you actually wish to build. I will get back to you as
+                    | soon as possible.
+                .req-form
+                  input(type='text',placeholder="Name *", name='Name' required)
+                  input(type='email',placeholder="Email address *" name='Reply to' required)
+                  
+                .final-form
+                  textarea(type='text',id='comment',placeholder="Tell me what your project is about and briefly explain what you want to accomplish. Estimated time of when you want the project completed is also appreciated. ", name='Comment')
+                  br
+                  input(type='submit',id='submit',value='SUBMIT PROJECT')
+                  br
+                  p * Required
           a.cd-modal-close(href="#0") Close
       .bottom
                                         

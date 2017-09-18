@@ -139,10 +139,11 @@
         <div class="about-wrapper">
           <h1>About</h1>
           <div class="about-left">
-            <div class="about-img"><img src="assets/images/MyAvatar.svg"></div>
-            <div class="about-title">
+            <div class="about-img">             <img src="assets/images/MyAvatar.svg">
               <h3>Paris Chrysanthou</h3>
               <p class="title">Full-Stack Developer</p>
+            </div>
+            <div class="about-title">
               <div class="about-para">
                 <p>
                    I'm a 21 years old developer based in Cyprus. Currently 
@@ -159,7 +160,8 @@
             <div class="tools">
               <h1>Tools</h1>
               <p>Here's a list of the tools I use daily</p>
-              <div class="tools-items"><a>HTLM5</a><a>CSS3</a><a>JavaScript</a><a>JS Libraries</a><a>Node.js</a><a>MongoDB</a><a>Express</a><a>LESS</a><a>Sass</a><a>GitHub</a><a>Codepen.io</a><a>Adobe Illustrator CC</a></div>
+              <div class="tools-items"><a>HTLM5</a><a>CSS3</a><a>JavaScript</a><a>JS Libraries</a><a>Node.js</a><a>MongoDB</a><a>Express</a><a>LESS</a><a>Sass</a><a>GitHub</a><a>Adobe Illustrator CC</a><a>Atom.io</a><a>Codepen.io</a></div>
+              <div class="dev-icons"><img src="/assets/images/webskills.svg"></div>
             </div>
           </div>
         </div>
@@ -174,14 +176,27 @@
         </div>
         <div class="modal-sect"></div>
         <section class="cd-section">
-          <div class="cd-modal-action"><a class="btn" href="#0" data-type="modal-trigger">Let's get started</a><span class="cd-modal-bg"></span></div>
+          <div class="cd-modal-action"><a class="btn" href="#0" data-type="modal-trigger">GET STARTED</a><span class="cd-modal-bg"></span></div>
           <div class="cd-modal">
             <div class="cd-modal-content">
               <form action="https://formspree.io/paris.chrysanthou@gmail.com" method="POST">
-                <input type="text" name="Name">
-                <input type="text" name="Comment">
-                <input type="email" name="Reply to">
-                <input type="submit" value="Send">
+                <div class="form-header">
+                  <h1>Just a few questions before we begin.</h1>
+                  <p>
+                    Fill out the form with your personal information and write a few
+                    words of what you actually wish to build. I will get back to you as
+                    soon as possible.
+                  </p>
+                </div>
+                <div class="req-form">
+                  <input type="text" placeholder="Name *" name="Name" required>
+                  <input type="email" placeholder="Email address *" name="Reply to" required>
+                </div>
+                <div class="final-form">
+                  <textarea type="text" id="comment" placeholder="Tell me what your project is about and briefly explain what you want to accomplish. Estimated time of when you want the project completed is also appreciated. " name="Comment"></textarea><br>
+                  <input type="submit" id="submit" value="SUBMIT PROJECT"><br>
+                  <p>* Required</p>
+                </div>
               </form>
             </div>
           </div><a class="cd-modal-close" href="#0">Close</a>
