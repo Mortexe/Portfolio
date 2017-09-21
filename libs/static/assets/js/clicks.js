@@ -10,10 +10,10 @@ $("body").on('click', '.pointer svg', function() {
     }, 1000);
 });
 
-$('body').on('click', '#button-top h3', function() {
+$('body').on('click touchstart', '#button-top h4', function() {
     $('html, body').animate({
         scrollTop: $('.email-sect').offset().top
-    }, 1500);
+    }, 2500);
 });
 
 $('body').on('click','.btn', function(){
