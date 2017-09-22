@@ -1,3 +1,14 @@
+$(window).resize(function(){
+   var width = $(window).width();
+   if(width<990){
+     $('#border.about').show();
+   }
+   else{
+     $('#border.about').hide();
+   }
+ })
+ .resize();
+
 $("body").on('click', '.pointer a', function() {
     $('html, body').animate({
         scrollTop: $(".container").offset().top
@@ -16,6 +27,8 @@ $('body').on('click touchstart', '#button-top h4', function() {
     }, 2500);
 });
 
+
+  //hide scroll on modal
 $('body').on('click','.btn', function(){
     $('body').css('overflow-y', 'hidden');
     $('body').css('overflow-x', 'hidden');

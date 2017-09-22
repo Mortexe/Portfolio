@@ -3,6 +3,7 @@ body{
   margin: 0;
   padding: 0;
   background-color: rgb(250,250,250);
+  font-weight: 300;
 }
 
 header{
@@ -13,6 +14,14 @@ header{
   background-size: cover;
   background-attachment: fixed;
   height: 100vh;
+}
+
+@media(max-width:1024px){
+  header{
+    background-image: url(apple.jpg);
+    background-size: auto;
+    background-attachment: inherit;
+  }
 }
 
 p{
@@ -215,8 +224,8 @@ header h1{
 .cd-modal-action a:hover{
   box-shadow: inset 100px 100px 100px 100px #34383c;
   color: #FDCD3B;
-  padding-left: 25px !important;
-  padding-right: 25px !important;
+  padding-left: 15px !important;
+  padding-right: 15px !important;
   transition: all ease-in .2s;
 }
 
@@ -262,6 +271,7 @@ header h1{
   -moz-transition: visibility 0s 0.5s;
   transition: visibility 0s 0.5s;
 }
+
 .cd-modal-action .cd-modal-bg.is-visible {
   opacity: 1;
   visibility: visible;
@@ -336,7 +346,7 @@ header h1{
 
 @media(max-width:850px){
   .cd-modal-content p{
-    width: 75%;
+    width: 85%;
   }
 }
 
@@ -429,7 +439,7 @@ input:focus, textarea:focus{
   width: 100%;
 }
 
-i{
+.services i{
 color: #FDCD3B;
 }
 
@@ -491,7 +501,12 @@ color: #FDCD3B;
 
 .work-container{
   text-align: center;
+  background: rgb(240,240,240);
   }
+
+.work-container h1{
+  padding-top: 2.5em;
+}
 
 .work-sect{
   margin-top: 100px;
@@ -550,6 +565,10 @@ ul li::before{
   max-width: 600px;
 }
 
+.left-work.last{
+  margin-bottom: 6em;
+}
+
 .right-work{
   display: inline-block;
   margin-top: 100px;
@@ -577,11 +596,6 @@ max-width: 960px;
   max-width: 600px;
 }
 
-.left-work.last{
-  margin-bottom: 8em;
-  border-bottom: 1px solid rgb(178,198,204);
-}
-
 #visit-btn h3{
   transition: all ease .5s;
   font-size: 15px;
@@ -598,9 +612,11 @@ max-width: 960px;
   border: 3px solid rgb(43,59,63);
   color: #FDCD3B;
   cursor: pointer;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
-@media (max-width:700px){
+@media (max-width:900px){
   .work-container{
     width: 100%;
   }
@@ -623,27 +639,32 @@ max-width: 960px;
 
   .left-work img, .right-work img{
     min-width: 300px;
+    max-width: 500px;
     float: none;
     width: 80%;
   }
 }
 
 .about-sect{
-  margin-top: 190px;
+  margin-top: 100px;
   text-align: center;
 }
 
 .about-wrapper{
-  background: rgb(240,240,240);
   border-radius: 12px;
   margin: 0 auto;
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-  width: 94%;
+  width: 1300px;
+  overflow: hidden;
+}
+
+.about-wrapper h1{
+  margin-bottom: 2.5em;
 }
 
 .about-left{
+  text-align: center;
   max-width: 700px;
-  width: 50%;
+  width: 600px;
   margin: 0 auto;
   float: left;
   display: inline;
@@ -688,7 +709,6 @@ max-width: 960px;
 .about-right{
   margin-left: 750px;
   text-align: left;
-  width: 30%;
   overflow: hidden;
 }
 
@@ -720,9 +740,15 @@ max-width: 960px;
   max-height: 300px;
 }
 
+@media(max-width:1299px){
+  .about-wrapper{
+    width: 100%;
+  }
+}
+
 @media (max-width: 1150px){
   .about-right{
-    margin-left: 700px;
+    margin-left: 650px;
   }
   @media (max-width: 990px){
     .about-left{
@@ -735,8 +761,10 @@ max-width: 960px;
       width: 90%;
     }
     .about-right{
+      padding-top: 3em;
       width: 50%;
       text-align: center;
+      margin: 0 auto;
     }
     .tools-items{
       margin: auto;
@@ -749,12 +777,19 @@ max-width: 960px;
     .about-right{
       width: 95%;
     }
+    .tools{
+      margin-top: 5em;
+    }
+    .about-wrapper{
+      border-radius: 0;
+      box-shadow: none;
+    }
   }
 }
 
 .email-sect{
   text-align: center;
-  margin-top: 18em;
+  margin-top: 6em;
   height: 400px;
   background-color: #FDCD3B;
 }
@@ -770,6 +805,7 @@ max-width: 960px;
   text-align: center;
   display: inline-block;
   font-size: 20px;
+  max-width: 700px;
 }
 
 @media(max-width: 1000px){
@@ -789,8 +825,8 @@ max-width: 960px;
 }
 
 .bottom{
-  height: 250px;
   background-color: rgb(43,58,63);
+  height: 250px;
 }
 
 #submit{
@@ -810,6 +846,8 @@ max-width: 960px;
   box-shadow: inset 100px 100px 100px 100px #FDCD3B;
   color: rgb(43,58,63);
   cursor: pointer;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 #comment{
@@ -835,13 +873,26 @@ max-width: 960px;
 text-align: center;
 }
 
-@media screen and (max-width: 1050px) {
-
-  .about-right{
-    margin: 0 auto;
-  }
+.bot-text p{
+  margin: 0 auto;
+  color:rgba(255,255,255,0.4);
+  font-weight: 300;
+  font-size: .9rem;
+  margin-bottom: 1.5em;
 }
 
-@media screen and (max-width: 950px){
-  .about-left{}
+.bot-icons i{
+  color: rgba(255,255,255,0.6);
+  margin: 0 4px;
+  width: 36px;
+  height: 36px;
+  background-color: rgba(0,0,0,0.1);
+  border-radius: 50px;
+  line-height: 2.2;
+  transition: .3s ease-in;
+}
+.bot-icons i:hover {
+  color:white;
+  background-color: black;
+  transition: .3s ease-in;
 }
