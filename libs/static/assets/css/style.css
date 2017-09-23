@@ -62,9 +62,15 @@ header h1{
     header h1{
       font-size: 2.1em;
     }
+  }
+  @media(max-width: 510px){
+    header h1{
+      font-size: 1.8em;
+    }
+  }
     @media(max-width: 440px){
-      header{
-
+      header h4{
+        font-size: .8em;
       }
       header h1{
         font-size: 1.5em;
@@ -74,8 +80,10 @@ header h1{
       header h1{
         font-size: 1.3em;
       }
+      header h4{
+        font-size: .7em;
+      }
   }
-}
 }
 #blink{
     font-weight: 300;
@@ -386,11 +394,15 @@ input:focus, textarea:focus{
 
 .pointer{
   position: absolute;
-  bottom: 5%;
-  width: 100%;
+  bottom: 4%;
   height: 50px;
   text-align: center;
   margin: 0 auto;
+  width: 100%;
+}
+
+.pointer-wrap{
+  display: inline-block;
 }
 
 .pointer svg{
@@ -401,6 +413,7 @@ input:focus, textarea:focus{
   height: 1.5em;
   animation: bounceArrow 2s infinite;
   transition: all .4s ease-in;
+  display: inline-block;
   }
 
 @keyframes bounceArrow {
@@ -418,12 +431,12 @@ input:focus, textarea:focus{
   }
 }
 
-.pointer:hover svg{
+.pointer-wrap:hover svg{
   fill: white;
   transition: all .4s ease-in;
 }
 
-.pointer:hover a{
+.pointer-wrap:hover a{
   color: white;
   transition: all .4s ease-in;
 }
@@ -443,10 +456,6 @@ input:focus, textarea:focus{
 color: #FDCD3B;
 }
 
-.services{
-  position: relative;
-}
-
 .row{
   margin-top: 6em;
   width: 100%;
@@ -454,13 +463,6 @@ color: #FDCD3B;
 
 .row_one{
   margin-top: 4.8em;
-  text-align: center;
-  display: inline-block;
-}
-
-.row_two{
-  text-align: center;
-  display: inline-block;
 }
 
 .column{
@@ -520,7 +522,7 @@ color: #FDCD3B;
 
 .left-work{
   display: inline-block;
-  margin-top: 100px;
+  margin-top: 60px;
 }
 
 .left-work .left-detail{
@@ -594,6 +596,19 @@ max-width: 960px;
   float: right;
   width: 40%;
   max-width: 600px;
+  margin-top: 80px;
+}
+
+.left-work img{
+  float: left;
+  width: 40%;
+  max-width: 600px;
+  margin-top: 80px;
+}
+
+#visit-btn{
+  display: inline-block;
+  height: 50%;
 }
 
 #visit-btn h3{
@@ -601,7 +616,7 @@ max-width: 960px;
   font-size: 15px;
   padding: 15px;
   display: inline-block;
-  border: 3px solid #FDCD3B;
+  border: 2px solid #FDCD3B;
   border-radius: 28px;
   text-align: center;
   color: rgb(43,59,63);
@@ -625,21 +640,23 @@ max-width: 960px;
     width: 100%;
   }
   .left-work .left-detail{
-    width: 100%;
+    width: 90%;
     text-align: center;
     margin: 0 auto;
     padding: 0;
+    float: none;
   }
   .right-work .right-detail{
-    width: 100%;
+    width: 90%;
     text-align: center;
     margin: 0 auto;
-    padding: 0;
+    float: none;
+
   }
 
   .left-work img, .right-work img{
     min-width: 300px;
-    max-width: 500px;
+    max-width: 400px;
     float: none;
     width: 80%;
   }
@@ -879,6 +896,10 @@ text-align: center;
   font-weight: 300;
   font-size: .9rem;
   margin-bottom: 1.5em;
+}
+
+.bot-icons a{
+  display: inline-block;
 }
 
 .bot-icons i{

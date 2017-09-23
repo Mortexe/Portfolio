@@ -9,13 +9,13 @@ $(window).resize(function(){
  })
  .resize();
 
-$("body").on('click', '.pointer a', function() {
+$("body").on('click', '.pointer-wrap a', function() {
     $('html, body').animate({
         scrollTop: $(".container").offset().top
     }, 1000);
 });
 
-$("body").on('click', '.pointer svg', function() {
+$("body").on('click', '.pointer-wrap svg', function() {
     $('html, body').animate({
         scrollTop: $(".container").offset().top
     }, 1000);
