@@ -4,6 +4,7 @@ body{
   padding: 0;
   background-color: rgb(250,250,250);
   font-weight: 300;
+  min-width: 320px;
 }
 
 header{
@@ -40,6 +41,16 @@ header h1{
   padding: 0;
 }
 
+@media(min-width: 2000px){
+  header h1{
+    font-size: 4em;
+  }
+
+  header h4{
+    font-size: 1.5em;
+  }
+}
+
 .top-wrapper{
   position: absolute;
   top: 50%;
@@ -48,15 +59,56 @@ header h1{
   width: 100%;
 }
 
+.nav-bar{
+  position: fixed;
+  width: 100%;
+  background: none;
+  color: #fff;
+  height: 100px;
+  opacity: .7;
+  background: rgb(55, 55, 55);
+  transition: all ease-in .2s;
+  z-index: 1;
+}
+
+.nav-bar ul{
+  color: white;
+  float: right;
+  list-style-type: none;
+  margin-top: 40px;
+  margin-right: 10px;
+  padding: 0;
+  display: inline-block;
+  background-color: transparent;
+}
+
+.nav-bar li{
+  display: inline-block;
+  margin: 8px;
+  font-weight: 700;
+}
+
+.nav-bar li:hover{
+  border-bottom: 1px solid rgb(253,205,75);
+  cursor: pointer;
+}
+
+.nav-bar img{
+  width: 80px;
+  float: left;
+}
+
 .top-text{
   width: 100%;
   height: 40%;
+  margin-top: 4em;
 }
 
 @media(max-width: 840px){
   header h1{
     font-size: 2.6em;
   }
+
 
   @media(max-width: 660px){
     header h1{
@@ -67,6 +119,23 @@ header h1{
     header h1{
       font-size: 1.8em;
     }
+
+    .nav-bar img{
+      width: 61px;
+    }
+
+    .nav-bar{
+      height: 70px;
+    }
+
+    nav.nav-bar li{
+      font-size: .8em;
+    }
+
+    .nav-bar ul{
+      margin-top: 30px;
+    }
+
   }
     @media(max-width: 440px){
       header h4{
@@ -75,6 +144,15 @@ header h1{
       header h1{
         font-size: 1.5em;
       }
+      nav.nav-bar li{
+        font-size: .7em;
+      }
+      .nav-bar img{
+        width: 55px;
+      }
+      .pointer-wrap{
+        margin-top: 1em;
+      }
     }
     @media(max-width: 321px){
       header h1{
@@ -82,6 +160,9 @@ header h1{
       }
       header h4{
         font-size: .7em;
+      }
+      .ponter-wrap{
+        margin-top: .5em;
       }
   }
 }
@@ -541,7 +622,7 @@ max-width: 960px;
   color: rgb(43,59,63);
 }
 
-ul{
+.work-sect ul{
   padding-left: 0;
   margin-top: 0;
   font-weight: 600 !important;
@@ -549,13 +630,13 @@ ul{
   letter-spacing: 1px;
 }
 
-ul li{
+.work-sect ul li{
   list-style: none;
   color: rgb(178,198,204);
   margin: 0;
 }
 
-ul li::before{
+.work-sect ul li::before{
   color: #FDCD3B;
   content: '\2022';
   font-size: 1.8em;
@@ -594,9 +675,9 @@ max-width: 960px;
 
 .right-work img{
   float: right;
-  width: 40%;
+  width: 45%;
   max-width: 600px;
-  margin-top: 80px;
+  margin-top: 45px;
 }
 
 .left-work img{
@@ -604,6 +685,13 @@ max-width: 960px;
   width: 40%;
   max-width: 600px;
   margin-top: 80px;
+}
+
+.left-work.last img{
+  float: left;
+  width: 45%;
+  max-width: 600px;
+  margin-top: 45px;
 }
 
 #visit-btn{
@@ -650,15 +738,27 @@ max-width: 960px;
     width: 90%;
     text-align: center;
     margin: 0 auto;
+    padding: 0;
     float: none;
-
   }
 
-  .left-work img, .right-work img{
+  .left-work img {
     min-width: 300px;
     max-width: 400px;
     float: none;
-    width: 80%;
+    width: 90%;
+  }
+  .right-work img{
+    max-width: 400px;
+    min-width: 380px;
+    float: none;
+    width: 90%;
+  }
+  .left-work.last img{
+    max-width: 400px;
+    min-width: 380px;
+    float: none;
+    width: 90%;
   }
 }
 
@@ -749,7 +849,7 @@ max-width: 960px;
   transition: ease-in 0.1s;
   color: rgb(118,132,137);
   border: 1.5px solid rgb(234,203,123);
-  cursor: pointer;
+  cursor:default;
 }
 
 .dev-icons img{
@@ -807,8 +907,8 @@ max-width: 960px;
 .email-sect{
   text-align: center;
   margin-top: 6em;
-  height: 400px;
   background-color: #FDCD3B;
+  height: 400px;
 }
 
 .email-wrap h1{
@@ -890,6 +990,12 @@ max-width: 960px;
 text-align: center;
 }
 
+.bot-logo img{
+  width: 60px;
+  margin-bottom: 15px;
+  margin-top: 2.5em;
+}
+
 .bot-text p{
   margin: 0 auto;
   color:rgba(255,255,255,0.4);
@@ -898,21 +1004,35 @@ text-align: center;
   margin-bottom: 1.5em;
 }
 
-.bot-icons a{
-  display: inline-block;
+.bot-text span{
+  padding-right: 6px;
 }
 
-.bot-icons i{
+.bot-text span i{
+  color: red;
+  animation: beat .50s infinite alternate;
+}
+
+@keyframes beat {
+  to { transform: scale(1.2);
+  }
+}
+
+.bot-icons a{
+  display: inline-block;
+  position: relative;
   color: rgba(255,255,255,0.6);
-  margin: 0 4px;
-  width: 36px;
-  height: 36px;
+  margin: 0 10px;
+  width: 45px;
+  height: 45px;
+  font-size: 25px;
   background-color: rgba(0,0,0,0.1);
   border-radius: 50px;
-  line-height: 2.2;
+  line-height: 1.9;
   transition: .3s ease-in;
 }
-.bot-icons i:hover {
+
+.bot-icons a:hover {
   color:white;
   background-color: black;
   transition: .3s ease-in;

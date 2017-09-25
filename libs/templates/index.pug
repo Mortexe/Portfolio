@@ -4,29 +4,37 @@ html
     meta(charset='utf-8')
     meta(name='viewport', content='width=device-width, user-scalable=no')
     link(rel='stylesheet', href='/assets/css/style.css')
+    link(rel="shortcut icon" href="/assets/images/favicon.png" sizes="32x32")
     link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css")
     link(href='https://fonts.googleapis.com/css?family=Montserrat:200,300,400,700,900', rel='stylesheet')
     title Paris Chrysanthou | Web Developer
   body
     header
-      .top-wrapper
-        .top-text
-          h1 Hey, I'm Paris. I design & build
-          h1
-            span.txt-rotate(data-period='2000', data-rotate='[ "websites.", "web applications.", "user interfaces.", "desktop applications." ]')  
-            span#blink |
-        #button-top
-          h4 YEP, YOU CAN HIRE ME
-      .pointer
-        .pointer-wrap
-          a Read more about me
-          br
-          svg#Capa_1(xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', version='1.1', x='0px', y='0px', width='512px', height='512px', viewbox='0 0 451.847 451.847', style='enable-background:new 0 0 451.847 451.847;', xml:space='preserve')
-            path(d='M225.923,354.706c-8.098,0-16.195-3.092-22.369-9.263L9.27,151.157c-12.359-12.359-12.359-32.397,0-44.751   c12.354-12.354,32.388-12.354,44.748,0l171.905,171.915l171.906-171.909c12.359-12.354,32.391-12.354,44.744,0   c12.365,12.354,12.365,32.392,0,44.751L248.292,345.449C242.115,351.621,234.018,354.706,225.923,354.706z')
+        nav.nav-bar
+          img(src='/assets/images/plogo.svg')
+          ul
+            li(class="serv") Services 
+            li(class="work") Work
+            li(class="about") About 
+            li(class="cont") Contact
+        .top-wrapper
+          .top-text
+            h1 Hey, I'm Paris. I design & build
+            h1
+              span.txt-rotate(data-period='2000', data-rotate='[ "websites.", "web applications.", "user interfaces.", "desktop applications." ]')  
+              span#blink |
+          #button-top
+            h4 YEP, YOU CAN HIRE ME
+        .pointer
+          .pointer-wrap
+            a Read more about me
+            br
+            svg#Capa_1(xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', version='1.1', x='0px', y='0px', width='512px', height='512px', viewbox='0 0 451.847 451.847', style='enable-background:new 0 0 451.847 451.847;', xml:space='preserve')
+              path(d='M225.923,354.706c-8.098,0-16.195-3.092-22.369-9.263L9.27,151.157c-12.359-12.359-12.359-32.397,0-44.751   c12.354-12.354,32.388-12.354,44.748,0l171.905,171.915l171.906-171.909c12.359-12.354,32.391-12.354,44.744,0   c12.365,12.354,12.365,32.392,0,44.751L248.292,345.449C242.115,351.621,234.018,354.706,225.923,354.706z')
     .container
-      .services
+      section.services
         .row
-          h1 What I provide
+          h1 Services
           p Building & Creating based on industry standard procedures
         .row_one
           .column.one
@@ -59,11 +67,10 @@ html
               | Once all the testing and evaluation is done and client agrees with the overall
               | product, it is finally determined as completed and it is ready to be delivered
               | to the client.
-      #border
-      .work-sect
+      section.work-sect
         .work-container
           h1 Personal Projects
-          p Few of my solo projects.
+          p A few of my solo projects.
           .left-work
             .work-left.wow.fadeInLeft
               img(src='/assets/images/devices.png')
@@ -96,9 +103,9 @@ html
           #border-work
           .left-work.last
             .work-left.wow.fadeInLeft
-              img(src='/assets/images/devices-drum.png')
+              img(src='/assets/images/css-update.png')
             .left-detail.wow.fadeInRight
-              h1 Virtual Drums
+              h1 Update CSS Variables
               ul
                 li  Built with HTML5, CSS and JavaScript.
               p
@@ -106,9 +113,9 @@ html
                 | coding and music. By simply using your keyboard you get authentic 
                 | drum sounds. This project was not taken as seriously
                 | but it is fully functional and fun to use.
-              #visit-btn(onclick="window.open('http://javascript-drums.surge.sh', '_blank');")
+              #visit-btn(onclick="window.open('http://css-update.surge.sh/', '_blank');")
                 h3 VISIT WEBSITE
-      .about-sect
+      section.about-sect
         .about-wrapper
           h1 About
           .about-left
@@ -150,7 +157,7 @@ html
               .dev-icons
                 img(src="/assets/images/webskills.svg") 
                 
-      .email-sect
+      section.email-sect
         .email-wrap
           h1 Want to build your website?
           p 
@@ -184,8 +191,14 @@ html
       .bottom
         .bottom-wrapper
           .bot-container
+            .bot-logo
+              img(src="/assets/images/plogo.svg")
             .bot-text
-              p Handmade by me © 2017.
+              p 
+                |Handmade with 
+                span
+                  i.fa.fa-heart(aria-hidden='true')
+                |by me © 2017.
             .bot-icons        
               a(href='https://www.linkedin.com/in/paris-chrysanthou-019228108/', target="_blank")
                 i.fa.fa-linkedin(aria-hidden='true')
