@@ -14,7 +14,7 @@ header{
   background-image: url(apple.jpg);
   background-size: cover;
   background-attachment: fixed;
-  height: 100vh;
+  min-height: 100vh;
   background-repeat: no-repeat;
 }
 
@@ -60,6 +60,29 @@ header h1{
   width: 100%;
 }
 
+@media(min-height: 1000px){
+  header{
+    min-height: 90vh;
+  }
+  .pointer{
+    padding-bottom: 100px;
+  }
+  .top-wrapper{
+    top:40%;
+  }
+  @media(min-height:1300px){
+    header{
+      min-height: 70vh;
+    }
+    .pointer{
+      padding-bottom: 420px;
+    }
+    .top-wrapper{
+      top:30%;
+    }
+  }
+}
+
 .nav-bar{
   position: fixed;
   width: 100%;
@@ -79,17 +102,26 @@ header h1{
   background-color: transparent;
 }
 
+nav a{
+  color: white;
+}
+
 .nav-bar li{
-  width: 6em;
+  width: 4em;
   display: inline-block;
   margin: 20px;
   font-weight: 700;
-  padding-bottom: 18px;
 }
 
 .nav-bar li:hover{
-  border-bottom: 3px solid white;
+  border-bottom: 3px solid #FDCD3B;
   cursor: pointer;
+}
+
+a.active {
+  border-bottom: 3px solid #FDCD3B;
+  padding-bottom: 18px;
+  width: 6em;
 }
 
 .nav-bar img{
@@ -109,11 +141,13 @@ header h1{
   header h1{
     font-size: 2.6em;
   }
-
   .nav-bar ul{
     margin-right: .5em;
   }
-  .nav-bar ul li{
+  a.active {
+    padding-bottom: 17px;
+  }
+  .nav-bar li{
     margin: 6px;
   }
   .nav-bar img{
@@ -129,6 +163,7 @@ header h1{
     header h1{
       font-size: 1.8em;
     }
+
 
     .nav-bar img{
       width: 61px;
@@ -160,8 +195,8 @@ header h1{
       .nav-bar img{
         width: 55px;
       }
-      .pointer-wrap{
-      }
+
+
     }
 
     @media(max-width: 340px){
@@ -176,6 +211,9 @@ header h1{
       }
       .nav-bar ul li{
         font-size: .6em;
+      }
+      a.active {
+        padding-bottom: 20px;
       }
   }
 }
@@ -497,9 +535,7 @@ input:focus, textarea:focus{
 }
 
 .top-wrapper{
-  vertical-align: middle;
   display: inline;
-
 }
 
 .pointer{
@@ -568,7 +604,7 @@ color: #FDCD3B;
 
 .row{
   margin-top: 6em;
-  width: 95%;
+  width: 100%;
 }
 
 .row_one{
@@ -687,7 +723,7 @@ max-width: 960px;
 }
 
 .right-work .right-detail{
-text-align: center;
+text-align: left;
 float: left;
 width: 46%;
 max-width: 960px;
@@ -724,7 +760,6 @@ max-width: 960px;
 
 #visit-btn{
   display: inline-block;
-  max-height: 0px;
 }
 
 #visit-btn h3{
@@ -733,7 +768,7 @@ max-width: 960px;
   padding: 15px;
   display: inline-block;
   border: 2px solid #FDCD3B;
-  border-radius: 28px;
+  border-radius: 30px;
   text-align: center;
   color: rgb(43,59,63);
 }
@@ -813,6 +848,7 @@ max-width: 960px;
   margin: 0 auto;
   float: left;
   display: inline;
+  margin-bottom: 2em;
 }
 
 .about-left img{
@@ -1016,6 +1052,10 @@ max-width: 960px;
 
 .final-form{
 text-align: center;
+}
+
+.bottom{
+  text-align: center;
 }
 
 .bot-logo img{

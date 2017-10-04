@@ -9,13 +9,19 @@ html
     link(href='https://fonts.googleapis.com/css?family=Montserrat:200,300,400,700,900', rel='stylesheet')
     title Paris Chrysanthou | Web Developer
   body
-    header
+    section#1
+      header
         nav.nav-bar
           img(src='/assets/images/plogo.svg')
           ul
-            li(class="work") WORK
-            li(class="about") ABOUT 
-            li(class="cont") CONTACT
+            li 
+              a(href='#1', class="home", id='test') HOME
+            li 
+              a(href='#2', class="work", id='test') WORK
+            li
+              a(href='#3', class="about", id='test') ABOUT 
+            li
+              a(href='#4', class="cont", id='test') CONTACT
         .top-wrapper
           .top-text
             h1 Hey, I'm Paris. I design & build
@@ -23,7 +29,7 @@ html
               span.txt-rotate(data-period='2000', data-rotate='[ "websites.", "web applications.", "user interfaces.", "desktop applications." ]')  
               span#blink |
           #button-top
-            h4 YEP, YOU CAN HIRE ME
+            h4 YEP, I CAN BUILD FOR YOU
         .pointer
           .pointer-wrap
             a Read more about me
@@ -31,7 +37,7 @@ html
             svg#Capa_1(xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', version='1.1', x='0px', y='0px', width='512px', height='512px', viewbox='0 0 451.847 451.847', style='enable-background:new 0 0 451.847 451.847;', xml:space='preserve')
               path(d='M225.923,354.706c-8.098,0-16.195-3.092-22.369-9.263L9.27,151.157c-12.359-12.359-12.359-32.397,0-44.751   c12.354-12.354,32.388-12.354,44.748,0l171.905,171.915l171.906-171.909c12.359-12.354,32.391-12.354,44.744,0   c12.365,12.354,12.365,32.392,0,44.751L248.292,345.449C242.115,351.621,234.018,354.706,225.923,354.706z')
     .container
-      section.services
+      .services
         .row
           h1 Services
           p Building & Creating based on industry standard procedures
@@ -66,7 +72,8 @@ html
               | Once all the testing and evaluation is done and client agrees with the overall
               | product, it is finally determined as completed and it is ready to be delivered
               | to the client.
-      section.work-sect
+    .sections
+      section#2.work-sect
         .work-container
           h1 Personal Projects
           p A few of my solo projects.
@@ -123,7 +130,7 @@ html
                 | (No mobile version) 
               #visit-btn(onclick="window.open('http://css-update.surge.sh/', '_blank');")
                 h3 VISIT WEBSITE
-      section.about-sect
+      section#3.about-sect
         .about-wrapper
           h1 About
           .about-left
@@ -165,7 +172,7 @@ html
               .dev-icons
                 img(src="/assets/images/webskills.svg") 
                 
-      section.email-sect
+      section#4.email-sect
         .email-wrap
           h1 Want to build your website?
           p 
