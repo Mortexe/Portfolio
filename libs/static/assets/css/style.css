@@ -113,11 +113,6 @@ nav a{
   font-weight: 700;
 }
 
-.nav-bar li:hover{
-  border-bottom: 3px solid #FDCD3B;
-  cursor: pointer;
-}
-
 a.active {
   border-bottom: 3px solid #FDCD3B;
   padding-bottom: 18px;
@@ -145,11 +140,9 @@ a.active {
     margin-right: .5em;
   }
   a.active {
-    padding-bottom: 17px;
+    padding-bottom: 18px;
   }
-  .nav-bar li{
-    margin: 6px;
-  }
+
   .nav-bar img{
     margin-left: 1em;
   }
@@ -158,13 +151,20 @@ a.active {
     header h1{
       font-size: 2.1em;
     }
+    .nav-bar li{
+      margin: 12px;
+    }
+    a.active{
+      padding-bottom: 26px;
+    }
+
   }
   @media(max-width: 510px){
     header h1{
       font-size: 1.8em;
     }
-
-
+    .nav-bar li{
+    }
     .nav-bar img{
       width: 61px;
     }
@@ -179,6 +179,9 @@ a.active {
 
     .nav-bar ul{
       margin-top: 30px;
+    }
+    a.active{
+      padding-bottom: 10px;
     }
 
   }
@@ -195,7 +198,16 @@ a.active {
       .nav-bar img{
         width: 55px;
       }
-
+      .nav-bar li{
+        margin: 3px;
+        padding-bottom: 20px;
+      }
+      a.active{
+        padding-bottom: 19px;
+      }
+      .nav-bar ul{
+        margin-right: 1em;
+      }
 
     }
 
@@ -634,6 +646,7 @@ color: #FDCD3B;
 }
 
 #border{
+  margin-top: 7em;
   width: 80%;
   display: inline-block;
   border-bottom: 1px solid rgb(178,198,204);
@@ -807,7 +820,7 @@ max-width: 960px;
 
   .left-work img {
     min-width: 300px;
-    max-width: 395px;
+    max-width: 310px;
     float: none;
     width: 90%;
   }

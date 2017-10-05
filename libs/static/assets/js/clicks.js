@@ -15,7 +15,7 @@ $(window).resize(function(){
    , nav_height = nav.outerHeight();
 
  $(window).on('scroll', function () {
-   var cur_pos = $(this).scrollTop();
+   var cur_pos = $(this).scrollTop() + 1;
 
    sections.each(function() {
      var top = $(this).offset().top - nav_height,
@@ -31,7 +31,7 @@ $(window).resize(function(){
    });
  });
 
- nav.find('a').on('click', function () {
+ nav.find('a').on('click touchstart', function () {
    var $el = $(this)
      , id = $el.attr('href');
 
@@ -78,27 +78,29 @@ $("body").on('click', '.pointer-wrap svg', function() {
     }, 700);
 });
 
+var email = $('email-wrap h1').position();
+
 $('body').on('click touchstart', '#button-top h4', function() {
     $('html, body').animate({
-        scrollTop: $('.email-sect').offset().top - 50
+        scrollTop: $('.email-wrap').offset().top + 50
     }, 700);
 });
 
 $('body').on('click touchstart', '.work', function() {
     $('html, body').animate({
-        scrollTop: $('.work-sect').offset().top - 50
+        scrollTop: $('.work-container').offset().top
     }, 700);
 });
 
 $('body').on('click touchstart', '.about', function() {
     $('html, body').animate({
-        scrollTop: $('.about-sect').offset().top - 100
+        scrollTop: $('.about-wrapper').offset().top
     }, 700);
 });
 
 $('body').on('click touchstart', '.cont', function() {
     $('html, body').animate({
-        scrollTop: $('.email-sect').offset().top - 100
+        scrollTop: $('.email-wrap').offset().top
     }, 700);
 });
 
@@ -109,4 +111,11 @@ $('body').on('click','.btn', function(){
 }).on('click','.cd-modal-close', function(){
     $('body').css('overflow-x', 'visible');
     $('body').css('overflow-y', 'visible');
-})
+});
+
+$('body').on('keyup', function(e){
+  if(e.which == 27){
+    $('body').css('overflow-y', 'visible');
+    $('body').css('overflow-x', 'visible');
+  }
+});
