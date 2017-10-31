@@ -753,7 +753,7 @@ max-width: 960px;
 .right-work img{
   float: right;
   width: 45%;
-  max-width: 600px;
+  max-width: 650px;
   margin-top: 45px;
 }
 
@@ -819,7 +819,7 @@ max-width: 960px;
   }
 
   .left-work img {
-    min-width: 400px;
+    min-width: 355px;
     max-width: 322px;
     float: none;
     width: 90%;
