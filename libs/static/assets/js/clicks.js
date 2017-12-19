@@ -86,6 +86,12 @@ $('body').on('click touchstart', '#button-top h4', function() {
     }, 700);
 });
 
+$('body').on('click touchstart', '.serv', function() {
+    $('html, body').animate({
+        scrollTop: $('.container').offset().top + 50
+    }, 700);
+});
+
 $('body').on('click touchstart', '.work', function() {
     $('html, body').animate({
         scrollTop: $('.work-container').offset().top

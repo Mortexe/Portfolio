@@ -23,13 +23,15 @@ html
           img(src='/assets/images/plogo.svg')
           ul
             li 
-              a(href='#1', class="home", id='test') HOME
+              a(href='#1', class="home", id='test') Home
+            li
+              a(href="#2", class="services", id='test') Services
             li 
-              a(href='#2', class="work", id='test') WORK
+              a(href='#3', class="work", id='test') Work
             li
-              a(href='#3', class="about", id='test') ABOUT 
+              a(href='#4', class="about", id='test') About 
             li
-              a(href='#4', class="cont", id='test') CONTACT
+              a(href='#5', class="cont", id='test') Contact
         .top-wrapper
           .top-text
             h1 Hey, I'm Paris. I design & build
@@ -45,7 +47,7 @@ html
             svg#Capa_1(xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', version='1.1', x='0px', y='0px', width='512px', height='512px', viewbox='0 0 451.847 451.847', style='enable-background:new 0 0 451.847 451.847;', xml:space='preserve')
               path(d='M225.923,354.706c-8.098,0-16.195-3.092-22.369-9.263L9.27,151.157c-12.359-12.359-12.359-32.397,0-44.751   c12.354-12.354,32.388-12.354,44.748,0l171.905,171.915l171.906-171.909c12.359-12.354,32.391-12.354,44.744,0   c12.365,12.354,12.365,32.392,0,44.751L248.292,345.449C242.115,351.621,234.018,354.706,225.923,354.706z')
     .container
-      .services
+      section#2.services
         .row
           h1 Services
           p Building & Creating based on industry standard procedures
@@ -81,7 +83,7 @@ html
               | product, it is finally determined as completed and it is ready to be delivered
               | to the client.
     .sections
-      section#2.work-sect
+      section#3.work-sect
         .work-container
           h1 Personal Projects
           p A few of my solo projects.
@@ -115,7 +117,7 @@ html
                 | drum sounds.
                 br 
                 br
-                | (No mobile version) 
+                | (Non-mobile responsive) 
               #visit-btn(onclick="window.open('http://javascript-drums.surge.sh', '_blank');")
                 h3 VISIT WEBSITE
               br
@@ -125,28 +127,27 @@ html
             .work-left.wow.fadeInLeft
               img(src='/assets/images/cubesvg.png')
             .left-detail.wow.fadeInRight
-              h1 3D Cube rotation animation
+              h1 University of Essex Academic Staff Page
               ul
-                li  Buil with HTML5 and CSS 
+                li  Built with HTML5 and CSS 
               p
-                | Creating 3D Animations using CSS is a way to be artistically creative 
-                | by writing code instead of using corporate applications to do the job. I came up
-                | with this concept by trying to creating a 360 degree rotation object so once 
-                | I finished doing the first rotation of the inner cube I've created two more
-                | object cubes that rotated around each other.
+                | This project was a redesign of the academic staff page at 
+                | the University of Essex. The goal was to redesign the 
+                | current page for each staff with a unique modern look that 
+                | would look more corporate and professional. 
                 br 
                 br
-                | (No mobile version) 
-              #visit-btn(onclick="window.open('http://360cube.surge.sh/', '_blank');")
+                | (Non-mobile responsive) 
+              #visit-btn(onclick="window.open('http://essexuni_staff.surge.sh/', '_blank');")
                 h3 VISIT WEBSITE
-      section#3.about-sect
+      section#4.about-sect
         .about-wrapper
           h1 About
           .about-left
             .about-img              
               img(src="assets/images/MyAvatar.svg")
               h3 Paris Chrysanthou
-              p.title Full-Stack Developer
+              p.title Web Developer
             .about-title
               .about-para
                 p 
@@ -182,7 +183,7 @@ html
               .dev-icons
                 img(src="/assets/images/webskills.svg") 
                 
-      section#4.email-sect
+      section#5.email-sect
         .email-wrap
           h1 Want to build your website?
           p 

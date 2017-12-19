@@ -109,13 +109,13 @@ nav a{
 .nav-bar li{
   width: 4em;
   display: inline-block;
-  margin: 20px;
+  margin: 10px;
   font-weight: 700;
 }
 
 a.active {
   border-bottom: 3px solid #FDCD3B;
-  padding-bottom: 18px;
+  padding-bottom: 28px;
   width: 6em;
 }
 
@@ -134,13 +134,13 @@ a.active {
 
 @media(max-width: 840px){
   header h1{
-    font-size: 2.6em;
+    font-size: 2.3em;
   }
   .nav-bar ul{
     margin-right: .5em;
   }
   a.active {
-    padding-bottom: 18px;
+    padding-bottom: 27.5px;
   }
 
   .nav-bar img{
@@ -149,19 +149,19 @@ a.active {
 
   @media(max-width: 660px){
     header h1{
-      font-size: 2.1em;
+      font-size: 1.7em;
     }
     .nav-bar li{
-      margin: 12px;
+      margin: 8px;
     }
     a.active{
-      padding-bottom: 26px;
+      padding-bottom: 30px;
     }
 
   }
-  @media(max-width: 510px){
+  @media(max-width: 550px){
     header h1{
-      font-size: 1.8em;
+      font-size: 1.3em;
     }
     .nav-bar li{
     }
@@ -175,22 +175,23 @@ a.active {
 
     nav.nav-bar li{
       font-size: .8em;
+      margin: 3px;
     }
 
     .nav-bar ul{
       margin-top: 30px;
     }
     a.active{
-      padding-bottom: 10px;
+      padding-bottom: 14px;
     }
 
   }
     @media(max-width: 440px){
       header h4{
-        font-size: .8em;
+        font-size: .6em;
       }
       header h1{
-        font-size: 1.5em;
+        font-size: 1.4em;
       }
       nav.nav-bar li{
         font-size: .7em;
@@ -206,14 +207,14 @@ a.active {
         padding-bottom: 19px;
       }
       .nav-bar ul{
-        margin-right: 1em;
+        margin-right: .5em;
       }
 
     }
 
-    @media(max-width: 340px){
+    @media(max-width: 350px){
       header h1{
-        font-size: 1.3em;
+        font-size: 1.23em;
       }
       header h4{
         font-size: .7em;
