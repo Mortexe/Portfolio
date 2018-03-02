@@ -53,8 +53,8 @@ $(window).scroll(function(event){
     $('#button-top').show('slow')
    }
   if (contTop >= 600){
-    $('.nav-bar').css('background','rgb(250, 250, 250)');
-    $('.nav-bar').css('box-shadow', '0px 2px 8px  #888888');
+    $('.nav-bar').css('background','rgba(255, 255, 255,.8)');
+    $('.nav-bar').css('box-shadow', '0px 1px 5px  #888888');
     $('nav a').css('color', '#FDCD3B');
   }if(contTop < 600){
 
